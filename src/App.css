@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Graphik Regular Italic';
+  src: url('fonts/Graphik-RegularItalic.eot');
+  src: url('fonts/Graphik-RegularItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Graphik-RegularItalic.woff2') format('woff2'),
+       url('fonts/Graphik-RegularItalic.woff') format('woff'),
+       /* url('fonts/Graphik-RegularItalic.ttf')  format('truetype'), */
+       url('fonts/Graphik-RegularItalic.svg#Graphik Regular') format('svg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Graphik Regular';
+  src: url('fonts/Graphik-Regular.eot');
+  src: url('fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Graphik-Regular.woff2') format('woff2'),
+       url('fonts/Graphik-Regular.woff') format('woff'),
+       /* url('fonts/Graphik-Regular.ttf')  format('truetype'), */
+       url('fonts/Graphik-Regular.svg#Graphik Regular') format('svg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Graphik Bold';
+  src: url('fonts/Graphik-Bold.eot');
+  src: url('fonts/Graphik-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Graphik-Bold.woff2') format('woff2'),
+       url('fonts/Graphik-Bold.woff') format('woff'),
+       /* url('fonts/Graphik-Bold.ttf')  format('truetype'), */
+       url('fonts/Graphik-Bold.svg#Graphik Bold') format('svg');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@font-face {
+  font-family: 'Graphik Semibold';
+  src: url('fonts/Graphik-Semibold.eot');
+  src: url('fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Graphik-Semibold.woff2') format('woff2'),
+       url('fonts/Graphik-Semibold.woff') format('woff'),
+       url('fonts/Graphik-Semibold.ttf')  format('truetype'),
+       url('fonts/Graphik-Semibold.svg#Graphik Semibold') format('svg');
+}
+
+*,
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100vw;
+  font-family: 'Graphik Regular', sans-serif;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import categories from './categories';
+import Card from './components/Card';
 import './App.css';
 
-function App() {
+// STYLE
+const app = {
+  background: '#190019'
+}
+
+// APP
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={app}>
+      {categories.map(item => 
+        <Card
+          key={item.id} 
+          title={item.title}
+          body={item.body}
+          img={item.img}
+        />
+      )}
     </div>
   );
 }
